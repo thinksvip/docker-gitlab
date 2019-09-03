@@ -41,8 +41,8 @@
  - [https://www.site2.com](https://site2.com)：自定义证书*https*站点，访问时浏览器会有安全提示，忽略提示访问即可
 
 ## 3. gitlab邮箱服务配置
-
-- `vim .env ` 根据gitlab官方给出的[SMTP settings](https://docs.gitlab.com/omnibus/settings/smtp.html#aliyun-direct-mail)合理配置 `SMTP` 模块参数
+- 邮箱服务默认关闭 如需开启请将`env` 配置中`SMTP_ENABLE=false`改为`SMTP_ENABLE=true`
+- 根据gitlab官方给出的[SMTP settings](https://docs.gitlab.com/omnibus/settings/smtp.html#aliyun-direct-mail)合理配置`env`中 `SMTP` 模块参数
 
 ## 4. 配置访问域名
 
