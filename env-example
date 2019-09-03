@@ -29,6 +29,7 @@ TIME_ZONE=Asia/Shanghai
 # SMTP settings
 # https://docs.gitlab.com/omnibus/settings/smtp.html#aliyun-direct-mail
 
+SMTP_ENABLE=false
 SMTP_ADDRESS=smtp.mxhichina.com
 SMTP_DOMAIN=your.domain
 SMTP_PASSWORD=xxxx

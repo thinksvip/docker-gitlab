@@ -15,7 +15,7 @@ services:
         external_url 'https://${YOUR_DOMAIN_NAME}'
         gitlab_rails['gitlab_shell_ssh_port'] = ${GITLAB_SHELL_SSH_PORT}
         gitlab_rails['time_zone'] = '${TIME_ZONE}'
-        gitlab_rails['smtp_enable'] = true
+        gitlab_rails['smtp_enable'] = ${SMTP_ENABLE}
         gitlab_rails['gitlab_email_from'] = '${SMTP_USER_NAME}'
         gitlab_rails['smtp_address'] = "${SMTP_ADDRESS}"
         gitlab_rails['smtp_port'] = ${SMTP_PORT}
