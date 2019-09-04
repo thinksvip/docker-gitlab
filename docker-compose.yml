@@ -9,7 +9,8 @@ services:
       - "${GITLAB_SHELL_SSH_PORT}:22"
     volumes:
       - '${GITLAB_HOST_LOG_PATH}:/var/log/gitlab'
-      - '${DATA_PATH_HOST}:/var/opt/gitlab'
+      - '${DATA_PATH_HOST}/data:/var/opt/gitlab'
+      - '${DATA_PATH_HOST}/config:/etc/gitlab'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'https://${YOUR_DOMAIN_NAME}'
